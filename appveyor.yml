@@ -2,7 +2,7 @@ version: 1.0.{build}
 image: Visual Studio 2019
 configuration: Release
 platform: x64
-clone_folder: c:\projects\v2rayN
+clone_folder: c:\projects\v2rayN\v2rayN
 before_build:
 - cmd: nuget restore
 build:
