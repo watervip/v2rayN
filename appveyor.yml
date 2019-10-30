@@ -1,12 +1,14 @@
 version: 1.0.{build}
 image: Visual Studio 2019
-configuration: Release
-platform: x64
-clone_folder: c:\projects\v2rayN\v2rayN
-before_build:
-- cmd: nuget restore
+environment:
+  matrix:   
+    - platform: Any CPU
+      configuration: Release
+matrix:
+  fast_finish: false
 build:
+  parallel: true
   verbosity: normal
 artifacts:
-- path: v2rayN\v2rayN\bin\4.5\Release\v2rayN.exe
-  name: v2rayN.exe
+- path: v2rayN\v2rayN\bin\4.0\Release\v.exe
+  name: v.exe
