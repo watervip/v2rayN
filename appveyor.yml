@@ -6,8 +6,6 @@ environment:
       configuration: Release
 matrix:
   fast_finish: false
-before_build:
-- cmd: donet restore
 build:
   parallel: true
   verbosity: normal
