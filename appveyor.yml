@@ -10,5 +10,5 @@ build:
   parallel: true
   verbosity: normal
 artifacts:
-- path: v2rayN\bin\Release\v2rayN.exe
+- path: v2rayN\v2rayN\bin\Release\v2rayN.exe
   name: v2rayN.exe
